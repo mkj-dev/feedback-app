@@ -14,7 +14,7 @@
     </div>
         <div class="mb-3">
         <label for="textarea" class="form-label">Feedback</label>
-        <textarea class="form-control" id="textarea" rows="3" placeholder="Enter your feedback..."></textarea>
+        <textarea class="form-control" name="textarea" id="textarea" rows="5" placeholder="Enter your feedback..."></textarea>
     </div>
     <div class="mb-3">
         <input type="submit" name="submit" value="Send" class="btn btn-dark w-100">
