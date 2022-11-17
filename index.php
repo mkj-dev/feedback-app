@@ -15,13 +15,13 @@
             <span class="navbar-brand mb-0 h1 text-white">Feedback App</span>
             <ul class="navbar-nav flex-row">
                 <li class="nav-item mx-4">
-                    <a class="nav-link text-white" href="index.html">Home</a>
+                    <a class="nav-link text-white" href="index.php">Home</a>
                 </li>
                 <li class="nav-item mx-4">
-                    <a class="nav-link text-white" href="feedback.html">Feedback</a>
+                    <a class="nav-link text-white" href="feedback.php">Feedback</a>
                 </li>
                 <li class="nav-item mx-4">
-                    <a class="nav-link text-white" href="about.html">About</a>
+                    <a class="nav-link text-white" href="about.php">About</a>
                 </li>
             </ul>
         </div>
