@@ -9,7 +9,7 @@ if(!empty($_POST)){
     $user['feedback_date'] = date('D, d M Y H:i:s', time());
     $userArray = json_decode(file_get_contents('./feedback_data/data.json'), true);
     array_push($userArray, $user);
-    file_put_contents('./feedback_data/data.json', json_encode($userArray));
+    file_put_contents('./feedback_data/data.json', json_encode($userArray, JSON_PRETTY_PRINT));
 }
 ?>
 <h2 class="mt-5 mb-2">Feedback</h2>
