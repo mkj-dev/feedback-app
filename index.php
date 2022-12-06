@@ -20,15 +20,15 @@ if(!empty($_POST)){
 <form action="" method="POST" class="my-4">
     <div class="mb-3">
         <label for="name" class="form-label">Name</label>
-        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
     </div>
     <div class="mb-3">
         <label for="email" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+        <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
     </div>
         <div class="mb-3">
         <label for="textarea" class="form-label">Feedback</label>
-        <textarea class="form-control" name="textarea" id="textarea" rows="5" placeholder="Enter your feedback..."></textarea>
+        <textarea class="form-control" name="textarea" id="textarea" rows="5" placeholder="Enter your feedback..." required></textarea>
     </div>
     <div class="mb-3">
         <input type="submit" name="submit" value="Send" class="btn btn-dark w-100">
