@@ -1,11 +1,11 @@
 <?php include "incl/header.php" ?>
 
 <?php
-if(!empty($_GET)){
+if(!empty($_POST)){
     $user = [];
-    $user['name'] = htmlentities($_GET['name']);
-    $user['email'] = htmlentities($_GET['email']);
-    $user['feedback'] = htmlentities($_GET['textarea']);
+    $user['name'] = htmlentities($_POST['name']);
+    $user['email'] = htmlentities($_POST['email']);
+    $user['feedback'] = htmlentities($_POST['textarea']);
     $user['feedback_date'] = date('D, d M Y H:i:s', time());;
     $userArray = json_decode( file_get_contents('./feedback_data/data.json'), true);
     array_push($userArray, $user);
@@ -17,7 +17,7 @@ if(!empty($_GET)){
 <h2 class="mt-5 mb-2">Feedback</h2>
 <p>Give us some super cool and positive feedback</p>
 
-<form action="" method="get" class="my-4">
+<form action="" method="POST" class="my-4">
     <div class="mb-3">
         <label for="name" class="form-label">Name</label>
         <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
