@@ -6,14 +6,12 @@ if(!empty($_POST)){
     $user['name'] = htmlentities($_POST['name']);
     $user['email'] = htmlentities($_POST['email']);
     $user['feedback'] = htmlentities($_POST['textarea']);
-    $user['feedback_date'] = date('D, d M Y H:i:s', time());;
-    $userArray = json_decode( file_get_contents('./feedback_data/data.json'), true);
+    $user['feedback_date'] = date('D, d M Y H:i:s', time());
+    $userArray = json_decode(file_get_contents('./feedback_data/data.json'), true);
     array_push($userArray, $user);
-    $str = print_r($userArray, true);
     file_put_contents('./feedback_data/data.json', json_encode($userArray));
 }
 ?>
-
 <h2 class="mt-5 mb-2">Feedback</h2>
 <p>Give us some super cool and positive feedback</p>
 
