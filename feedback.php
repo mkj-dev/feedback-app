@@ -9,7 +9,7 @@ $i = 0;
 <h2 class="mt-5 mb-3">Past Feedback</h2>
 
 <?php foreach($data as $user): ?>
-    <div class="card w-50 my-3" id="<?= "card-". $i ?>">
+    <div class="card w-50 my-3" data-id="<?= "card-". $i ?>">
         <div class="card-body">
             <div class="d-flex justify-content-between">
                 <h5 class="card-title mb-0"><?= $user['name'] ?></h5>
