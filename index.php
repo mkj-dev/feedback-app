@@ -10,6 +10,7 @@ if(!empty($_POST)){
     $userArray = json_decode(file_get_contents('./feedback_data/data.json'), true);
     array_push($userArray, $user);
     file_put_contents('./feedback_data/data.json', json_encode($userArray, JSON_PRETTY_PRINT));
+    header('Location: ./feedback.php');
 }
 ?>
 <h2 class="mt-5 mb-2">Feedback</h2>
